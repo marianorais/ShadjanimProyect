@@ -1,0 +1,108 @@
+.blue-light {
+    background-color: $blue-light;
+}
+.red {
+    background-color:  #cc1404;
+    border-radius: 15px 15px 0px 0px;
+    padding:0px 0px ;
+    display: flex;
+    font-weight: bold;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+} 
+
+.navbar {
+    .topModal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 390px;
+        object-fit: contain;
+        max-height: 100%; 
+        margin: 0 auto; 
+    }    
+    /* background-color: $blue-light; */
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+        width: 400px;
+    }
+    &__top {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 335px;
+        margin: 0 auto;
+
+        &--title {
+            font-family: 'Avenir';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    
+        &--icon {
+            height: 2.5rem;
+            width: 2.5rem;
+            cursor: pointer;
+            text-decoration: none;
+            color: $black;
+        }
+    }
+
+    &__bottom {
+        margin-top: 1rem;
+        display: grid;
+        place-items: center;
+
+        &--share {
+            width: 250px;            
+            height: 51px;
+        }
+
+        &--button {
+            width: 335px;            
+            height: 51px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        &--container {
+            width: 340px;
+            margin-top: 1.2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* &--save {
+            background-color: $black;
+            color: $white;
+            width: 250px;
+        } */
+        
+        &--pen {
+            border-radius: 50%;
+            background-color: $blue-light;
+            outline: none;
+            border: 1.5px solid $dark-blue-button;
+            
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+    }
+
+}

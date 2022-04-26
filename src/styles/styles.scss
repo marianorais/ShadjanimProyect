@@ -1,0 +1,27 @@
+@import './base/base';
+@import './base/settings';
+@import './base/buttons';
+
+@import './components/login';
+@import './components/shiduj';
+@import './components/navbar';
+@import './components/sections';
+@import './components/images';
+@import './components/management';
+@import './components/save';
+@import './components/error-box';
+@import './components/content';
+@import './components/profile';
+@import './components/delete-box';
+@import './components/loading';
+
+// fonts
+@font-face {
+    font-family: Avenir;
+    src: url("../assets/fonts/AvenirLTStd-Roman.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("../assets/fonts/Raleway-Light.otf") format("opentype");
+}

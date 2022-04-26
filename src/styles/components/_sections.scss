@@ -1,0 +1,202 @@
+.sections-header {
+  grid-row: 2 / 3;
+
+  margin: 30px auto;
+  background-color: $blue-light;
+ 
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  width: 335px;
+
+  &__icon {
+    font-size: 30px;
+  }
+
+}
+
+
+.sections-container {
+    z-index: 1;
+   max-width: 98%;
+    .section {  /* para cada uno de los section que sean generados */	
+      padding-bottom: 40px;
+      padding: 20px 10px;
+  
+      &__drag {
+        font-size: 30px;
+        margin-left: -1.5%;
+        color: black;
+      }
+  
+      &__title {
+        margin-top: 10px;
+        margin-bottom: 2px;
+        display: flex;
+        justify-content: space-between;        
+
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 25px;
+        align-items: center;
+  
+        &--icon {
+          color: $dark-gray;     
+          width: 18px;   
+          height: 18px;
+        }
+      }
+
+      &__add {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+  
+      &__action {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+  
+        &--link{
+          cursor: pointer;
+          color: $link;
+
+          font-family: 'Avenir';
+          font-style: normal;
+          font-weight: 800;
+          font-size: 14px;
+        }
+  
+        &--trash {
+          
+          /* display: flex;
+          align-self: flex-start; */
+          color: $dark-gray;
+          width: 18px;
+          height: 18px;
+          margin-bottom: 1px;
+        }
+
+        &--minus {
+          width: 24px;
+          height: 24px;
+          cursor: pointer;
+        }
+
+        &--type {
+          border: 1px solid $light-grey-button-section;
+          border-radius: 10px;
+          width: 96px;
+          height: 31px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }      
+    }
+  
+    &__btn {
+      width: 335px;
+      height: 53px;
+      border: 1px solid #E4E4E4;
+      margin: 30px auto;
+      
+      background-color: $white1;  
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+          
+      /* font-family: Avenir; */
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+
+
+      color: #11274E;
+
+
+    }
+  
+    &__icon {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  
+    .section-options {  /* caja de 3 opciones de section */
+      position: absolute;
+      background-color: rgba(0,0,0,0.2);
+      width: 333px;
+      height: 1700px;      
+      top: 0;
+  
+      display: flex;
+      justify-content: center;    
+      align-items: center;
+  
+      &__box { /* diseño de la caja en si misma */
+        border-radius: 30px;
+        position: fixed;
+        top: 200px;
+    
+        height: 230px;
+        width: 180px;
+    
+        padding: 40px;  
+        background-color: white; 
+  
+        
+        &--btn{ /* para alinear los 3 botones */
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;    
+          align-items: flex-start;
+          height: 150px;
+        }
+  
+        &--cancel {
+          margin-top: 40px;
+          color: $medium-gray;
+          cursor: pointer;
+          text-align: center;
+        }
+        
+      }
+  
+      &__btn { /* estilo de cada boton */
+        width: 190px;
+        border-radius: 15px;
+        outline: none;
+        padding: 7px;
+        cursor: pointer;
+        background-color: $white;
+        border: .5px solid $light-gray;
+  
+        display: flex;
+        align-items: center;
+  
+        text-align: left;
+        padding-left: 25px;
+  
+        font-weight: 548;
+  
+        &--icon {
+          font-size: 16px;
+          margin-right: 10px;
+        }
+      }
+      
+    }
+  }

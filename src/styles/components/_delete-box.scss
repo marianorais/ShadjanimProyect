@@ -1,0 +1,82 @@
+.delete-modal {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    // height: 50%;
+
+    display: flex;
+    justify-content: center;
+
+    z-index: 2000;
+
+    
+
+    .delete-box {
+        position: relative;
+        top: 100px;
+
+        text-align: "center";
+        height: 150px;
+        width: 360px;
+
+        padding: 40px;
+        transform: scale(0.8);
+
+        background-color: white;
+
+        z-index: 999;
+
+        border-radius: 15px;
+
+        font-family: 'Avenir';
+    }
+
+    .text-container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+
+        height: 100%;
+
+    }
+
+    .button-area {
+        position: fixed;
+        top: 330px;
+    }
+
+    h1 {
+        color: $danger;
+    }
+
+    p {
+        color: black;
+        font-size: 25px;
+        text-align: center;        
+    }
+}
+.ContentModal{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 10%;
+}
+.imageModal{
+  margin:0;
+  display: inline;
+  width:100%;
+  top: 0;
+}
+.listModal{
+  display: flex;
+  margin-top: 2%;
+  //justify-content: center;
+  align-items: center;
+}

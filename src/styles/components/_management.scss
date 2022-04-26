@@ -1,0 +1,103 @@
+.management {
+    padding: 0px 20px;
+    width: 360px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    height: 220px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__lock {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 40px;
+        padding: 0 15px;
+    }
+    
+    &__lock,
+    &__access {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &--icon {
+            font-weight: bolder;
+            font-size: 35px;
+
+            width: 50px;
+            height: 25px;
+            color: #11274E;
+
+
+        }
+
+        &--title {
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+
+            color: #3F3D56;
+
+
+        }
+
+        &--subtitle {
+            font-size: 13px;
+            color: $dark-gray;
+
+            font-family: 'Avenir';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+                    
+            color: #CCCCCC;
+        }
+
+        &--subtitle2 {
+            font-size: 13px;
+        }
+    }
+
+    &__link {
+        font-size: 13px;
+        color: $link;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 40px;
+
+    }
+
+    &__signOut {
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 27px;
+        color: $link;
+        margin-left: 15px;
+    }
+
+    &__signOutButton {
+        // margin-top: 80px;
+        font-family: Avenir;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 27px;
+        color: $white;
+        width: 335px;
+        height: 53px;
+        margin: 0 auto;
+    }
+
+    &__signOutEmail {
+        margin-top: 80px;
+        
+    }
+}

@@ -1,0 +1,38 @@
+.colorDefault {
+    color: $dark-gray3;
+    margin-top: 10px;
+}
+.colorSection{
+    color: black;
+    margin-top: 10px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;    
+    align-items: end;
+    margin-top: 20px;
+}
+
+.text {
+    width: 230px;
+    text-align: justify;
+}
+
+.delete-button {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.bullet {
+    margin-top: -5px;
+    display: list-item;          
+    list-style-type: circle;       
+    list-style-position: inside;
+    color:'#3F3D56'; 
+}
+
+.add-bullet {
+    margin-top: 15px;
+    cursor: pointer;
+}

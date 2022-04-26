@@ -1,0 +1,67 @@
+button {
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 16px;    
+}
+
+.btn {
+    cursor: pointer;
+    
+    &__white {        
+        background-color: $white1;
+        width: 335px;
+        height: 53px;
+        border: 1px solid $light-gray2;
+    }
+
+    &__edit {
+        background-color: $white1;
+        width: 335px;
+        height: 53px;
+        border: 1px solid $dark-blue-button;
+    }
+
+    &__blue {
+        background-color: $dark-blue-button;
+        color: $white;
+        border: none;
+    }
+
+    &__danger {
+        background-color: $white;
+        color: $danger;
+        border: 1px solid $danger;
+    }
+
+    &__delete {
+        background-color: $white;
+        color: $danger;
+        width: 335px;
+        height: 53px;
+        border: 1px solid $danger;
+    }
+
+    &__transparent {
+        border: 1px solid black;
+    }
+
+    &__gray {
+        color: 000000;
+        border: none;
+        background-color: snow;
+    }
+
+    &__disabled {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+            
+        color: rgba(63, 61, 86, 0.3);
+        border: 1px solid rgba(63, 61, 86, 0.3);
+    }
+
+}

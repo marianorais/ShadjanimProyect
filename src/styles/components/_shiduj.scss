@@ -1,0 +1,180 @@
+.shiduj-screen {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  // max-width: 98%;
+  
+  &__body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    //width: 92%;
+    max-width: 98%;
+    margin-top: 20px;
+
+    /* grid-template-rows: 1fr, repeat(3, 1fr); */
+    /* display: flex;
+    flex-flow: column nowrap;
+    align-items: center; */
+  }
+
+}
+
+.basic-details {
+  //max-width: 98%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+  grid-row: 1 / 2;
+  
+  &__input {
+    padding: 25px 2px;
+
+    &--title {      
+      font-family: Avenir;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 25px;
+      
+      margin-bottom: .6rem;
+    }
+
+    &--input{
+      outline: none;
+      border: none;
+      border-bottom: 1px solid $light-gray;
+
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 25px;
+
+      color: $input-text-color;
+
+      opacity: 0.4;
+
+    }
+
+    &--radio{
+      //color: $dark-gray;
+    }
+
+    &--optional{
+      margin-bottom: .6rem;
+      font-family: Avenir;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+
+  }
+
+  &__birthday {
+    display: flex;
+    align-items: center;
+    margin-top: -45px;
+  }
+
+  .birthday{
+    // border-block-color: gray;
+    display: flex;
+    margin-bottom: 1px;
+    
+    input{
+      width: 6ch;
+      // margin-left: 3px;
+      margin: 0 5px 0 5px;
+      border-style: groove;
+      border-radius: 5px;
+      height: 22px;
+    }
+    p{
+      width: 6ch;
+      font-size: 12px;
+      text-align: right;
+      margin-left: 4px;
+      color: #3F3D56;
+    }
+  }
+  .react-date-picker__wrapper {
+    width: 140px;
+    border: none;
+  }
+  
+  .react-datepicker-popper {
+    z-index: 9999 !important;
+  }
+
+  .react-date-picker__inputGroup{
+    flex-grow: .5;
+  }
+
+  .react-select-container {
+    width: 200px;
+  }
+  input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    padding: 6px;
+    top: -1px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    display: center;
+    visibility: visible;
+    border: 2px solid white;
+    // align-items: ;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    background-color: #e7e6e7;
+    border-radius: 15px;
+  }
+  
+  /* appearance for checked radiobutton */
+  input[type="radio"]:checked {
+    background-color: black;
+  }
+}
+.bullet-container{
+     /* border: 1px dotted pink; */
+  margin: 0;
+  list-style: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 3rem;
+
+  display: inline-flex;
+  flex-direction: column; 
+}
+.bullet-item{
+    color: rgb(250, 82, 52);
+    box-shadow: 0px 2px 4px #4a4c4e;
+    border-radius: 5px;
+    padding: 0.3em 0.5em;
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 5px;
+    border: 2px solid transparent;
+}
+.bullet-item:focus {
+    outline: none;
+    border: 2px solid #4a9af5;
+  }
